@@ -1,2 +1,3 @@
 
 # new string
+print("DICT")
