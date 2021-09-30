@@ -1,11 +1,18 @@
-print("Hello! My name is Peter.\nI was created in 2021.")
+print("Hello! My name is BOT.\nI was created in 2021.")
 print("Please remind me your name")
-while True:
-    user_text = input("Your name")
-    if user_text == 'Zhenya':
-        print("What a great name you have,Zhenya!")
-        break
-    print(user_text)
+print(">Zhenya")
+print("What a great name you have,Zhenya!")
+print("Enter remainders of dividing your age by 3,5 and 7")
+print(">1")
+print(">2")
+print(">1")
+print("Your age is 22; that`s a good time to start programming")
+
+
+
+
+
+
 
 
 
