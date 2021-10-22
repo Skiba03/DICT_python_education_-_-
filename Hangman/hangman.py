@@ -1,10 +1,12 @@
 print("HANGMAN\nThe game will be available soon.")
 while True:
-    words = input("HANGMAN\nGuess the word:")
     import random
 
     a = ['python', 'java', 'javascript', ]
-    if words == ( random.choice(a)):
+    r = (random.choice(a))
+    w = (r[:3] + "-" * (len(r) - 3))
+    words = input("HANGMAN\nGuess the word "+ w +":")
+    if words == r:
         break
     else:
         print("You lost!")
