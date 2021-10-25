@@ -21,6 +21,9 @@ while t <= 7:
                 if new == r:
                     print("You win!\nThanks for playing!")
                     quit()
+                if words in m[i]:
+                    print("You have already entered this letter")
+                    t -= 1
             m = new
         else:
             print("That letter doesn't appear in the word")
@@ -28,4 +31,3 @@ while t <= 7:
         if t == 8:
             print("You lose!\nThanks for playing!")
             break
-
