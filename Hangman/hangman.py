@@ -1,11 +1,10 @@
 import random
+
 print("HANGMAN\nThe game will be available soon.")
 t = 0
 while t <= 7:
     a = ['python', 'java', 'javascript', 'php', ]
     r = (random.choice(a))
-    # w = (r[:3] + "-" * (len(r) - 3))
-    # words = input("HANGMAN\nGuess the word "+ w +":")
     m = '_' * len(r)
     words = input("" + m + "\nInput a letter:")
     while words:
@@ -28,6 +27,17 @@ while t <= 7:
         else:
             print("That letter doesn't appear in the word")
         t += 1
+        y = words
+        if y.isalpha():
+            print()
+        else:
+            print("Please enter a lowercase English letter")
+            t -= 1
+        o = len(words)
+        if o == 1:
+            print()
+        else:
+            print("You should input a single letter")
         if t == 8:
             print("You lose!\nThanks for playing!")
             break
